@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { Navbar } from './Navbar'
+
 
 function App() {
   const [data, setData] = useState({})
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <div className="app">
+        <Navbar />
       <div className="search">
         <input
           value={location}
